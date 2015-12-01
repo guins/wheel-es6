@@ -1,6 +1,6 @@
-Es6 Starter
+# Es6 Starter
 
-# Start a project
+## Start a project
 
 ```
 git clone git@github.com:guins/wheel-es6.git PROJECT-NAME
