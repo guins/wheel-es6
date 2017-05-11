@@ -9,10 +9,10 @@
     "server:dev:proxy": "browser-sync start --proxy \"MY-DOMAIN.ME\" --files \"html/*.html, html/**/*.css, html/**/*.js\"",
     "html:dev": "jade src/index.jade -o html --doctype html5 --pretty --watch",
     "html:prod": "jade src/index.jade -o html --doctype html5",
-    "css:dev": "stylus --use autoprefixer-stylus --use ./node_modules/stylus-font-face --with {limit:80000} --watch src/css/main.styl -o html/build/css/bundle.css --sourcemap",
-    "css:prod": "stylus --use autoprefixer-stylus --use ./node_modules/stylus-font-face --with {limit:80000} src/css/main.styl -o html/build/css/bundle.min.css --compress",
-    "js:dev": "watchify src/js/main.js -d -v -t babelify -t aliasify -o html/build/js/bundle.js",
-    "js:prod": "browserify src/js/main.js -t babelify -t aliasify -t uglifyify | uglifyjs -c > html/build/js/bundle.js"
+    "css:dev": "stylus --use autoprefixer-stylus --use ./node_modules/stylus-font-face --with {limit:80000} --watch src/css/index.styl -o html/build/css/bundle.css --sourcemap",
+    "css:prod": "stylus --use autoprefixer-stylus --use ./node_modules/stylus-font-face --with {limit:80000} src/css/index.styl -o html/build/css/bundle.min.css --compress",
+    "js:dev": "watchify src/js/index.js -d -v -t babelify -t aliasify -o html/build/js/bundle.js",
+    "js:prod": "browserify src/js/index.js -t babelify -t aliasify -t uglifyify | uglifyjs -c > html/build/js/bundle.js"
   },
   "repository": {
     "type": "git",
