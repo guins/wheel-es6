@@ -12,7 +12,7 @@
     "css:dev": "stylus --use autoprefixer-stylus --use ./node_modules/stylus-font-face --with {limit:80000} --watch src/css/index.styl -o html/build/css/bundle.css --sourcemap",
     "css:prod": "stylus --use autoprefixer-stylus --use ./node_modules/stylus-font-face --with {limit:80000} src/css/index.styl -o html/build/css/bundle.min.css --compress",
     "js:dev": "watchify src/js/index.js -d -v -t babelify -t aliasify -o html/build/js/bundle.js",
-    "js:prod": "browserify src/js/index.js -t babelify -t aliasify -t uglifyify | uglifyjs -c > html/build/js/bundle.js"
+    "js:prod": "browserify src/js/index.js -t babelify -t aliasify -t uglifyify | uglifyjs -c > html/build/js/bundle.min.js"
   },
   "repository": {
     "type": "git",
